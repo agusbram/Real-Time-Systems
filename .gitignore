@@ -1,0 +1,14 @@
+# Ignorar todos los archivos binarios generados por compilación
+*.out
+*.o
+*.exe
+*.a
+*.so
+*.dll
+
+# Ignorar cualquier archivo sin extensión (binarios comunes en Linux)
+exercise*
+
+# Ignorar carpetas comunes de compilación
+build/
+dist/
