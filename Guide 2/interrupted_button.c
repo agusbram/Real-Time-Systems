@@ -75,8 +75,10 @@ int main(int argc, char const *argv[]) {
     // Prints by console actual state of LED before entering while loop
     printf("LED initialized OFF\n");
 
-    /* Permite registrar una función callback que se ejecuta automáticamente cuando se detecta un cambio de nivel lógico en un GPIO. 
-    Este mecanismo evita el uso de polling continuo y permite manejar eventos de hardware de forma reactiva. */
+    /**
+     * It allows you to register a callback function that executes automatically when a logic level change is detected on a GPIO pin.
+     * This mechanism avoids the use of continuous polling and allows for reactive handling of hardware events.
+     *  */ 
     gpioSetAlertFunc(BUTTON_GPIO, button_callback);
     
     // This loop finished when handling SIGINT signal

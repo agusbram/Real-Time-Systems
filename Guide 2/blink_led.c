@@ -69,7 +69,7 @@ int main(int argc, char const *argv[]) {
             gpioWrite(LED_GPIO, led_state);
 
             // Updates time waited for the future event (next iteration)
-            // This method maintains a constant PERIOD and avoids an temporal error called 
+            // This method maintains a constant PERIOD and avoids an temporal error called temporary drift
             previous_time += PERIOD;
         }
     }
