@@ -6,7 +6,7 @@
 #include <signal.h> // To manipulate signals (in this program SIGINT [ctrl + C])
 #include <unistd.h>
 
-#define LED_GPIO 4 // Define number of pin GPIO where's connected LED
+#define LED_GPIO 23 // Define number of pin GPIO where's connected LED
 #define BUTTON_GPIO 17 // Define number of pin GPIO where's connected button to turn ON or OFF
 
 /**
@@ -64,7 +64,7 @@ int main(int argc, char const *argv[]) {
     // 15            0
     // 10000 microseconds = 10 miliseconds
     // Normal bouncing typical mechanics of buttons is between 1 - 5 miliseconds. In the worst case is aproximately 10 miliseconds.
-    gpioSetGlitchFilter(BUTTON_GPIO, 10000);
+    gpioGlitchFilter(BUTTON_GPIO, 10000);
 
     // Writes initial state of LED in PIN 4 of the Rasperry Pi
     gpioWrite(LED_GPIO, 0);
