@@ -1,0 +1,16 @@
+1) Instalar GNU Octave en Ubuntu u otra distribución de GNU/Linux:
+
+	sudo apt-get update
+	sudo apt-get install octave
+	sudo apt-get install liboctave-dev
+
+2) Descargar los paquetes control y signal desde la página web de GNU Octave.
+
+3) Abrir GNU Octave, ir al directorio donde se descargaron los paquetes control y signal, y en la consola ejecutar los dos primeros comandos del script "instalar_paquetes.m" para la instalación de los paquetes control (línea 2) y signal (línea 3).
+
+4) Los dos comandos restantes sirven para cargar los paquetes correspondientes.
+
+5) También se podrían instalar los paquetes directamente desde la línea de comandos de Linux:
+
+	sudo apt install octave-control octave-signal
+
